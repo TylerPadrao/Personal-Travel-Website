@@ -1,0 +1,334 @@
+/* Set background color to a cream color, padding and margin to 0, and width to 100% */
+html,
+body {
+  background: #f1faee;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* BEGINNING OF NAVIGATION */
+
+/* Navigation bar have a width of 100%, font family of Poppins, adjust font size, and have a relative position */
+.nav {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  position: relative;
+}
+
+/* Float the navigation logo to the right of the page and add some padding */
+.nav img {
+  float: right;
+  padding-top: 4px;
+}
+
+/* When hovered over logo, change cursor to pointer */
+.nav img:hover {
+  cursor: pointer;
+}
+
+/* Style unordered list elements to have no list style type, 0 margin and padding, and a width of 100% */
+.nav .ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Set list elements to float left and have an inline display */
+.nav .ul a {
+  display: inline;
+  float: left;
+}
+
+/* Set nav links to be colored cream */
+.nav a {
+  color: #f1faee;
+}
+
+/* Set global navigation and drop down menu to have a block display, add padding, delete text decoration, and change color to red */
+.nav .ul a,
+.places a {
+  display: block;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e63946;
+  text-decoration: none;
+}
+
+/* Set width of links in drop down menu to be 230px */
+.places a {
+  width: 230px;
+}
+
+/* Set styles of navigation link when it is active */
+.nav .ul .active {
+  background-color: #1d3557;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  text-decoration: underline;
+}
+
+/* When hovering over the links, change color to blue and underline text decoration */
+.nav .ul a:hover,
+.places a:hover {
+  background-color: #1d3557;
+  text-decoration: underline;
+}
+
+/* When hovering over active link, make sure active link still stays blue when hovered off of it */
+.nav .ul a:hover:not(.active),
+.dropbtn:hover:not(.active) {
+  background-color: #1d3557;
+}
+
+/* Set styles of drop down menu at it's default state (when the link is not active) */
+.dropbtn {
+  background-color: #e63946;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  color: #f1faee;
+  cursor: pointer;
+}
+
+/* Set drop down menu to have a relative position and float left */
+.dropdown_menu {
+  position: relative;
+  float: left;
+}
+
+/* Have an initial display of none for the places within drop down menu, and set an absolute position */
+.places {
+  display: none;
+  position: absolute;
+  white-space: nowrap; /* Causes no line breaks when list element contains white space in it */
+}
+
+/* Styles for drop down menu and places - display places and change z index so it displays over the banner image */
+.dropdown_menu .places {
+  display: block;
+  z-index: 1;
+}
+
+/* When drop down button is hovered, change color to blue, add an underline text decoration, and add pointer cursor */
+.dropdown_menu .dropbtn:hover {
+  background-color: #1d3557;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* END OF NAVIGATION */
+
+/* Style h1 tags to set font family, font size, font weight, color, and add some margin and padding */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: #e63946;
+  margin-left: 30px;
+  margin-top: 40px;
+  padding-top: 70px;
+  margin-right: 30px;
+}
+
+/* Style p tags to set font family, font size, color to blue, and add some left margin */
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  color: #1d3557;
+  margin-left: 30px;
+}
+
+/* Style links to references blue */
+section a {
+  color: #1d3557;
+}
+
+/* Style links to references red when hovered */
+section a:hover {
+  color: #e63946;
+}
+
+/* Style footer to have center aligned text, font size of 1em, font family of Poppins, and top padding */
+footer {
+  text-align: center;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  padding-top: 100px;
+}
+
+/* symbol copy right to have no left margin */
+footer p {
+  text-align: center;
+  margin-left: 0;
+}
+
+/* Style "Back to top" link to have no text decoration, color of cream, font size of 1em, and font family of poppins */
+footer form input {
+  text-decoration: none;
+  color: #f1faee;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  background-color: #e63946;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Style "Back to top" button to be blue and have an underline text decoration when hovered */
+footer form input:hover {
+  background-color: #1d3557;
+  text-decoration: underline;
+}
+
+/* Initially set the hamburger menu to no display when on desktop view */
+.icon {
+  display: none;
+}
+
+/* Style the font and add some padding for the comment form */
+#comment_section {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: #1d3557;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+/* Add some bottom margin for the h2 tag */
+#comment_section h2 {
+  margin-bottom: 10px;
+}
+
+/* Add some bottom margin and adjust font size of user name box */
+#user {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* Add some margins, style fonts, and make text area not resizable for the comment input box */
+#message {
+  margin-top: 10px;
+  margin-bottom: 45px;
+  resize: none;
+  color: #1d3557;
+  font-family: "Poppins", sans-serif;
+  width: 400px;
+  height: 150px;
+  font-size: 15px;
+}
+
+/* Style the submit button */
+#submit {
+  margin-left: -411px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #f1faee;
+  font-size: 0.7em;
+  font-family: "Poppins", sans-serif;
+  background-color: #e63946;
+  border: none;
+  outline: none;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Style the submit button when hovered - change color and text decoration */
+#submit:hover {
+  background-color: #1d3557;
+  text-decoration: underline;
+}
+
+/* Style the list for the outputted comments in the database */
+#list {
+  font-family: "Poppins", sans-serif;
+  padding-top: 50px;
+  color: #e63946;
+  font-size: 1.3em;
+  margin-left: 30px;
+}
+
+/* Style the list elements - specifically the comments */
+#list ul {
+  list-style-type: none;
+  color: #1d3557;
+  margin-left: -38px;
+  margin-right: 30px;
+}
+
+/* Media query styles: mobile view */
+@media screen and (max-width: 755px) {
+  /* Have links wrap around - fixes no wrap issue */
+  a {
+    word-wrap: break-word;
+  }
+
+  /* When on mobile view, make hamburger menu appear and style it */
+  .hamburger .icon {
+    display: block;
+    background-color: #e63946;
+    padding: 15px;
+    width: 30px;
+    height: 31px;
+  }
+
+  /* Styles for hamburger menu icon */
+  .icon {
+    display: block;
+    color: #f1faee;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  /* Change hamburger menu to blue when hovered */
+  .hamburger .icon:hover {
+    background-color: #1d3557;
+  }
+
+  /* Style ul elements - have display initially set to none when not clicked */
+  .ul {
+    width: 10px;
+    display: none;
+  }
+
+  /* Style links and input button to display across entire page */
+  .ul a,
+  .ul input {
+    width: 1000px;
+    text-align: left;
+  }
+
+  /* When hovered over nav, display as block */
+  .nav:hover {
+    display: block;
+  }
+
+  /* Display places as block when in mobile view */
+  .places {
+    display: block;
+  }
+
+  /* Add some padding to comments when mobile view */
+  #list ul {
+    margin-right: 30px;
+  }
+}
